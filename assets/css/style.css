@@ -89,7 +89,6 @@ a:hover {
     border-color: var(--ganesha-teal);
 }
 
-/* Un bottone speciale per azioni forti (es. Selected Papers) */
 .btn-accent {
     background-color: var(--ganesha-coral);
     color: white;
@@ -314,8 +313,8 @@ footer a:hover {
 }
 
 .team-card:hover img {
-    transform: scale(1.03);
-    border-color: var(--ganesha-coral); /* Appare il bordo Coral */
+    transform: scale(1.0);
+    border-color: var(--ganesha-coral); 
 }
 
 .team-card h5 {
@@ -400,4 +399,93 @@ footer a:hover {
     letter-spacing: 1px;
     margin-bottom: 1rem;
     display: block;
+}
+/* Bottone speciale per il fondo pagina */
+.btn-ganesha-cta {
+    background-color: var(--ganesha-coral);
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 15px 40px; /* Un po' più grande */
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Ombra per profondità */
+}
+
+.btn-ganesha-cta:hover {
+    background-color: var(--ganesha-coral-dark); /* Diventa più scuro all'hover */
+    color: white;
+    transform: translateY(-2px); /* Si alza leggermente */
+}
+
+/* =========================================
+   12. ABOUT PAGE STYLES
+   ========================================= */
+
+/* Box Obiettivi con Icona */
+.objective-box {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.objective-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--ganesha-coral);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.objective-icon {
+    font-size: 2.5rem;
+    color: var(--ganesha-coral); /* Icona arancione/salmone */
+    margin-bottom: 20px;
+}
+
+/* Striscia Statistiche */
+.stats-section {
+    background-color: var(--ganesha-teal);
+    color: white;
+    padding: 60px 0;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--ganesha-coral); /* Numero in risalto */
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   13. NAVBAR HOVER EFFECT (Desktop Only)
+   ========================================= */
+
+/* Applica l'effetto solo su schermi larghi (lg = 992px in su) */
+@media (min-width: 992px) {
+    
+    /* Quando passi sopra l'elemento .dropdown, mostra il .dropdown-menu */
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Rimuove spazi vuoti per evitare che il menu si chiuda */
+    }
+
+    /* Opzionale: Animazione leggera di comparsa */
+    .navbar .dropdown-menu {
+        animation: fadeIn 0.3s ease;
+    }
+}
+
+/* Definizione dell'animazione */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
