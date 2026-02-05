@@ -3,7 +3,7 @@
    ========================================= */
 :root {
     /* Palette Ganesha estratta dal Logo */
-    --ganesha-teal: #2cb4b4;       /* Colore Primario (Testo, Navbar, Footer) */
+    --ganesha-teal: #30a9a9;       /* Colore Primario (Testo, Navbar, Footer) */
     --ganesha-teal-dark: #165959;  /* Hover del Primario */
     --ganesha-coral: #FF8F6B;      /* Colore Secondario (Accenti, Hover, CTA) */
     --ganesha-coral-dark: #e67e5c; /* Hover del Secondario */
