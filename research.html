@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Lines | Ganesha Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/ganesha-logo.png" alt="Ganesha Project" height="55">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Research Lines</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#rl1">Formal Network Language</a></li>
+                            <li><a class="dropdown-item" href="#rl2">Deductive Reasoning</a></li>
+                            <li><a class="dropdown-item" href="#rl3">Deductive–Inductive Integration</a></li>
+                            <li><a class="dropdown-item" href="#rl4">Theoretical Foundations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ganesha-Lib</a></li>
+                            <li><a class="dropdown-item" href="#">Datasets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container text-center">
+            <h1 class="display-5">Research Lines</h1>
+            <p class="lead text-muted">The four pillars of the GANESHA framework</p>
+        </div>
+    </header>
+
+    <!-- Research Line 1 -->
+    <section id="rl1" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400/1F7A7A/ffffff?text=RL1+Formal+Language" alt="Research Line 1" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge rounded-pill me-3" style="background-color: var(--ganesha-teal); font-size: 1rem; padding: 0.5rem 1rem;">RL1</span>
+                        <h6 class="text-uppercase fw-bold text-muted ls-1 mb-0">Research Line 1</h6>
+                    </div>
+                    <h2 class="mb-3" style="color: var(--ganesha-teal);">Formal Network Language and Cognitive Network Surrogates</h2>
+                    <p class="mb-3">
+                        This research line focuses on the design of a formal language of the network and on the construction of cognitive network surrogates. The objective is to provide the network with an explicit, structured representation of its own state, events, actions, constraints, and causal relations, as well as of the human agent interacting with it.
+                    </p>
+                    <p class="mb-4">
+                        The network surrogate acts as an abstract, reasoning-enabled representation of the infrastructure and its context, enabling the system to reason about consequences, alternatives, and uncertainties before acting. This line establishes the symbolic and semantic foundations required to move beyond reactive optimization and toward intentional, context-aware network behavior.
+                    </p>
+                    <div class="border-start border-4 ps-3" style="border-color: var(--ganesha-coral) !important;">
+                        <p class="fst-italic text-muted mb-0">
+                            "Establishing the symbolic and semantic foundations for intentional, context-aware network behavior."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Line 2 -->
+    <section id="rl2" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400/E07A5F/ffffff?text=RL2+Deductive+Reasoning" alt="Research Line 2" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1 pe-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge rounded-pill me-3" style="background-color: var(--ganesha-coral); font-size: 1rem; padding: 0.5rem 1rem;">RL2</span>
+                        <h6 class="text-uppercase fw-bold text-muted ls-1 mb-0">Research Line 2</h6>
+                    </div>
+                    <h2 class="mb-3" style="color: var(--ganesha-coral);">Deductive Reasoning over Network Surrogates</h2>
+                    <p class="mb-3">
+                        Building on the formal language and network surrogate developed in RL1, this research line aims at developing deductive reasoning mechanisms natively embedded within the network.
+                    </p>
+                    <p class="mb-3">
+                        The goal is to enable the network to perform multi-step, logic-driven inference over events, states, and actions, including causal and counterfactual reasoning across time, space, and domains. This includes reasoning about "why" certain outcomes occur and "what would happen if" alternative decisions were taken.
+                    </p>
+                    <p class="mb-4">
+                        Through deductive reasoning, the network transitions from pattern-based reaction to explicit understanding and principled decision-making.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Multi-step, logic-driven inference</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Causal and counterfactual reasoning</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Principled decision-making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Line 3 -->
+    <section id="rl3" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400/3D5A80/ffffff?text=RL3+Human+Interrogable" alt="Research Line 3" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge rounded-pill me-3" style="background-color: #3D5A80; font-size: 1rem; padding: 0.5rem 1rem;">RL3</span>
+                        <h6 class="text-uppercase fw-bold text-muted ls-1 mb-0">Research Line 3</h6>
+                    </div>
+                    <h2 class="mb-3" style="color: #3D5A80;">Deductive–Inductive Integration and Human-Interrogable Networks</h2>
+                    <p class="mb-3">
+                        This research line addresses the integration of deductive reasoning with inductive learning from data, forming a unified deductive–inductive intelligence.
+                    </p>
+                    <p class="mb-3">
+                        Inductive models are used to learn from observations, measurements, and streaming data, while deductive reasoning constrains, guides, and explains the learning process. A key objective is to make the network directly interrogable by the human user, enabling natural language queries, contextual dialogue, and adaptive responses.
+                    </p>
+                    <p class="mb-4">
+                        The system actively collects and incorporates additional information from the user and the environment to refine its reasoning, close knowledge gaps, and personalize decisions. This transforms the network into an interactive cognitive partner rather than a passive optimizer.
+                    </p>
+                    <div class="border-start border-4 ps-3" style="border-color: #3D5A80 !important;">
+                        <p class="fst-italic text-muted mb-0">
+                            "Transforming the network into an interactive cognitive partner rather than a passive optimizer."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Line 4 -->
+    <section id="rl4" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400/81B29A/ffffff?text=RL4+Theoretical+Foundations" alt="Research Line 4" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1 pe-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge rounded-pill me-3" style="background-color: #81B29A; font-size: 1rem; padding: 0.5rem 1rem;">RL4</span>
+                        <h6 class="text-uppercase fw-bold text-muted ls-1 mb-0">Research Line 4</h6>
+                    </div>
+                    <h2 class="mb-3" style="color: #81B29A;">End-to-End Theoretical Foundations and Performance Characterization</h2>
+                    <p class="mb-3">
+                        The final research line provides a rigorous theoretical understanding of the GANESHA framework end to end.
+                    </p>
+                    <p class="mb-3">
+                        This includes the formal analysis of reasoning correctness, stability, robustness, and convergence, as well as the characterization of performance trade-offs involving accuracy, latency, scalability, and resource consumption.
+                    </p>
+                    <p class="mb-4">
+                        New metrics are developed to assess not only traditional network performance, but also reasoning quality, explainability, and reliability under uncertainty. This line ensures that the proposed framework is not only visionary, but also analytically grounded and quantitatively measurable.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Formal analysis of reasoning correctness</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Stability, robustness, and convergence</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> New metrics for reasoning quality and explainability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2>Research Lines Overview</h2>
+                    <p class="text-muted">The GANESHA project is structured into four interconnected research lines.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#rl1" class="research-item">
+                        <span class="number">1</span>
+                        <h5>Formal Network Language</h5>
+                        <p class="small text-muted mt-2">Symbolic and semantic foundations for explicit, structured network representation.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#rl2" class="research-item">
+                        <span class="number">2</span>
+                        <h5>Deductive Reasoning</h5>
+                        <p class="small text-muted mt-2">Multi-step, logic-driven inference including causal and counterfactual reasoning.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#rl3" class="research-item">
+                        <span class="number">3</span>
+                        <h5>Deductive–Inductive Integration</h5>
+                        <p class="small text-muted mt-2">Unified intelligence enabling natural language queries and interactive partnership.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#rl4" class="research-item">
+                        <span class="number">4</span>
+                        <h5>Theoretical Foundations</h5>
+                        <p class="small text-muted mt-2">Rigorous analysis and new metrics for reasoning quality and explainability.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white py-5" style="background-color: #1a1a1a; border-top: 5px solid var(--ganesha-teal);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Ganesha Project</h5>
+                    <p class="small opacity-75">
+                        Science and technology for the explanation of AI decision making.
+                    </p>
+                    <div class="mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg text-white-50"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin fa-lg text-white-50"></i></a>
+                        <a href="#"><i class="fab fa-github fa-lg text-white-50"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="people.html" class="text-white text-decoration-none">People</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-start">
+                        <img src="https://placehold.co/60x40/003399/ffcc00?text=EU" alt="EU Flag" class="me-3 mt-1">
+                        <div class="small opacity-75">
+                            This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No. 834756).
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center small opacity-50">
+                &copy; 2026 Ganesha Project. Webdesign by Nik Cinigiani and Riccardo Pacini.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
