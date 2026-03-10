@@ -1,19 +1,19 @@
 /* =========================================
-   1. VARIABLES & RESET
+    VARIABLES & RESET
    ========================================= */
 :root {
-    /* Palette Ganesha estratta dal Logo */
-    --ganesha-teal: #30a9a9;       /* Colore Primario (Testo, Navbar, Footer) */
-    --ganesha-teal-dark: #165959;  /* Hover del Primario */
-    --ganesha-coral: #FF8F6B;      /* Colore Secondario (Accenti, Hover, CTA) */
-    --ganesha-coral-dark: #e67e5c; /* Hover del Secondario */
+    /* Palette Ganesha */
+    --ganesha-teal: #30a9a9;       
+    --ganesha-teal-dark: #165959;  
+    --ganesha-coral: #FF8F6B;      
+    --ganesha-coral-dark: #e67e5c;
     --text-dark: #212529;
     --bg-light: #f8f9fa;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 76px; /* Altezza navbar compensata */
+    padding-top: 76px;
     color: var(--text-dark);
 }
 
@@ -28,10 +28,10 @@ a:hover {
 }
 
 /* =========================================
-   2. NAVBAR
+    NAVBAR
    ========================================= */
 .navbar {
-    padding: 1rem 0; /* Più spazio per il logo */
+    padding: 1rem 0;
 }
 
 .navbar-brand {
@@ -51,7 +51,6 @@ a:hover {
     color: var(--ganesha-teal);
 }
 
-/* Dropdown Menu styling */
 .dropdown-menu {
     border-top: 3px solid var(--ganesha-coral);
     border-radius: 0 0 5px 5px;
@@ -63,9 +62,9 @@ a:hover {
 }
 
 /* =========================================
-   3. BUTTONS OVERRIDE
+    BUTTONS OVERRIDE
    ========================================= */
-/* Sovrascriviamo il btn-primary standard di Bootstrap */
+
 .btn-primary {
     background-color: var(--ganesha-teal);
     border-color: var(--ganesha-teal);
@@ -89,7 +88,6 @@ a:hover {
     border-color: var(--ganesha-teal);
 }
 
-/* Un bottone speciale per azioni forti (es. Selected Papers) */
 .btn-accent {
     background-color: var(--ganesha-coral);
     color: white;
@@ -104,7 +102,7 @@ a:hover {
 }
 
 /* =========================================
-   4. HERO SECTION
+    HERO SECTION
    ========================================= */
 .hero-section {
     padding: 80px 0;
@@ -115,20 +113,19 @@ a:hover {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 1.2;
-    color: white; /* Titolo in Teal */
+    color: white; 
 }
 
 .hero-section p {
     font-size: 1.2rem;
-    color: #e0f7f7; /* Testo leggero */
+    color: #e0f7f7; 
     margin-bottom: 30px;
 }
 
-/* Box laterale info */
 .info-box {
     background-color: #fff;
     border: 1px solid #e9ecef;
-    border-left: 5px solid var(--ganesha-coral); /* Accento laterale */
+    border-left: 5px solid var(--ganesha-coral); 
     border-radius: 4px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -155,7 +152,7 @@ a:hover {
 }
 
 /* =========================================
-   5. SECTIONS GENERAL
+    SECTIONS GENERAL
    ========================================= */
 .section-padding {
     padding: 80px 0;
@@ -167,7 +164,7 @@ h2, h3 {
 }
 
 /* =========================================
-   6. RESEARCH LINES (GRID)
+    RESEARCH LINES (GRID)
    ========================================= */
 .research-item {
     background: #fff;
@@ -187,14 +184,14 @@ h2, h3 {
 
 .research-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(31, 122, 122, 0.15); /* Ombra color Teal */
-    border-color: var(--ganesha-coral); /* Bordo diventa Coral */
+    box-shadow: 0 10px 20px rgba(31, 122, 122, 0.15); 
+    border-color: var(--ganesha-coral);
 }
 
 .research-item .number {
     font-size: 3rem;
     font-weight: 700;
-    color: #e9ecef; /* Grigio chiaro di base */
+    color: #e9ecef; 
     display: block;
     margin-bottom: 15px;
     line-height: 1;
@@ -202,7 +199,7 @@ h2, h3 {
 }
 
 .research-item:hover .number {
-    color: var(--ganesha-coral); /* Numero si accende al passaggio */
+    color: var(--ganesha-coral);
 }
 
 .research-item h5 {
@@ -210,6 +207,136 @@ h2, h3 {
     margin: 0;
     color: var(--text-dark);
 }
+
+/* =========================================
+    PUBLICATIONS
+   ========================================= */
+
+.publication-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(48, 169, 169, 0.15);
+    border-color: var(--ganesha-coral);
+}
+
+.publication-title {
+    color: var(--ganesha-teal);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.publication-journal {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 12px;
+    border-left: 3px solid var(--ganesha-coral);
+    padding-left: 12px;
+}
+
+.publication-abstract {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.publication-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.publication-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pub-link-primary {
+    background-color: var(--ganesha-teal);
+    color: white;
+}
+
+.pub-link-primary:hover {
+    background-color: var(--ganesha-teal-dark);
+    color: white;
+}
+
+.pub-link-secondary {
+    background-color: #f0f0f0;
+    color: var(--ganesha-teal);
+    border: 1px solid #ddd;
+}
+
+.pub-link-secondary:hover {
+    background-color: var(--ganesha-teal);
+    color: white;
+    border-color: var(--ganesha-teal);
+}
+
+.publication-year {
+    display: inline-block;
+    background-color: var(--ganesha-coral);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 2px solid var(--ganesha-teal);
+    background-color: white;
+    color: var(--ganesha-teal);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--ganesha-teal);
+    color: white;
+}
+
 
 /* =========================================
    7. PARTNERS
@@ -260,8 +387,6 @@ footer a:hover {
 /* =========================================
    10. PEOPLE PAGE STYLES
    ========================================= */
-
-/* Header specifico per le pagine interne */
 .page-header {
     background-color: var(--bg-light);
     padding: 60px 0;
@@ -274,7 +399,6 @@ footer a:hover {
     font-weight: 700;
 }
 
-/* Stile per il Principal Investigator (PI) */
 .pi-section img {
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -292,7 +416,6 @@ footer a:hover {
     color: var(--ganesha-coral);
 }
 
-/* Card per i membri del team */
 .team-card {
     border: none;
     background: #fff;
@@ -314,18 +437,15 @@ footer a:hover {
 .team-card img {
     transition: opacity 0.4s ease, transform 0.3s ease;
     width: 100%;
-    /* Trucco per forzare immagini quadrate se non lo sono */
     aspect-ratio: 1 / 1; 
     object-fit: cover;
-    border-bottom: 4px solid transparent; /* Preparo il bordo */
+    border-bottom: 4px solid transparent;
 }
 
-/* Prima immagine */
 .team-card .img-wrapper img:first-child {
     display: block;
 }
 
-/* Seconda immagine appare con cursor hover */
 .team-card .img-wrapper .hover-img {
     position: absolute;
     top: 0;
@@ -346,7 +466,7 @@ footer a:hover {
 
 .team-card:hover img {
     transform: scale(1);
-    border-color: var(--ganesha-coral); /* Appare il bordo Coral */
+    border-color: var(--ganesha-coral);
 }
 
 .team-card h5 {
@@ -364,7 +484,6 @@ footer a:hover {
     letter-spacing: 1px;
 }
 
-/* Sezione Join Us */
 .join-us-section {
     background-color: var(--ganesha-teal);
     color: white;
@@ -380,13 +499,10 @@ footer a:hover {
 /* =========================================
    11. TEAM MODALS & EXPANSION
    ========================================= */
-
-/* Rendiamo la card interattiva */
 .team-card {
-    cursor: pointer; /* Cambia il cursore in una manina */
+    cursor: pointer;
 }
 
-/* Stile della finestra Modale */
 .modal-header {
     background-color: var(--ganesha-teal);
     color: white;
@@ -394,14 +510,13 @@ footer a:hover {
 }
 
 .modal-header .btn-close {
-    filter: invert(1) grayscale(100%) brightness(200%); /* Croce bianca */
+    filter: invert(1) grayscale(100%) brightness(200%); 
 }
 
 .modal-body {
     padding: 2rem;
 }
 
-/* Stile per la lista pubblicazioni nel modal */
 .publication-list {
     list-style: none;
     padding-left: 0;
@@ -417,7 +532,7 @@ footer a:hover {
 
 .publication-list li::before {
     content: "•";
-    color: var(--ganesha-coral); /* Bullet point color corallo */
+    color: var(--ganesha-coral);
     font-weight: bold;
     position: absolute;
     left: 0;
