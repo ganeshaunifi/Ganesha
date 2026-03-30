@@ -964,6 +964,18 @@ footer a:hover {
     margin: 0;
 }
 
-.related-item p {
-    margin: 0;
+/* =========================================
+   13. HERO SECTION RESPONSIVE
+   ========================================= */
+@media (max-width: 580px) {
+  .hero-section h1 {
+    text-align: center !important;
+  }
+
+  .hero-section img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
 }
