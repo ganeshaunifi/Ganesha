@@ -122,6 +122,84 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.hero-section img {
+    object-fit: contain;
+    max-height: 440px;
+    width: auto;
+}
+
+@media (max-width: 1199.98px) {
+    .hero-section img {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-section img {
+        max-height: 300px;
+    }
+}
+
+/* =========================================
+    FUNDING INFO SECTION
+   ========================================= */
+.funding-info-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.funding-box {
+    background-color: #165959;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.funding-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin:0;
+    font-size: 0.95rem;
+}
+
+.funding-row:last-child {
+    margin-bottom: 0;
+}
+
+.funding-row-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.funding-row-horizontal:last-child {
+    margin-bottom: 0;
+}
+
+.funding-item {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.funding-item .funding-label {
+    color: var(--ganesha-coral);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.funding-item .funding-value {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
 .hero-section-about {
     padding: 80px 0;
     background-color: #ffffff;
