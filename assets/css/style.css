@@ -1060,3 +1060,302 @@ footer a:hover {
     object-fit: contain;
   }
 }
+
+/* =========================================
+   14. NEWS & EVENTS RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991.98px) {
+  .page-header {
+    padding: 40px 0;
+    margin-bottom: 30px;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .news-header {
+    gap: 15px;
+  }
+
+  .col-lg-4 {
+    margin-top: 50px;
+  }
+
+  .news-date {
+    min-width: 70px;
+    padding: 12px;
+  }
+
+  .news-date .day {
+    font-size: 1.6rem;
+  }
+
+  .news-title {
+    font-size: 1.1rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Smartphone (up to 767px) */
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  .page-header {
+    padding: 30px 0;
+    margin-bottom: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .page-header p {
+    font-size: 0.95rem;
+  }
+
+  /* News Cards - Full Width and Optimized for Mobile */
+  .news-card {
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  .news-header {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .news-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    width: 100%;
+    padding: 12px;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .news-date .day {
+    font-size: 1.4rem;
+    margin-right: 5px;
+  }
+
+  .news-date .month {
+    font-size: 0.85rem;
+    margin-top: 0;
+  }
+
+  .news-info {
+    width: 100%;
+  }
+
+  .news-title {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .news-title a {
+    word-break: break-word;
+  }
+
+  .news-meta {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+
+  .news-time {
+    gap: 4px;
+  }
+
+  .news-excerpt {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 12px 0;
+  }
+
+  .news-footer {
+    padding-top: 12px;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  /* Sidebar - Stack Below Content on Mobile */
+  .sidebar-widget {
+    margin-top: 30px;
+    padding: 18px;
+    border-radius: 6px;
+  }
+
+  .widget-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+
+  /* Events - Full Width and Tappable */
+  .event-item {
+    gap: 12px;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .event-date {
+    min-width: 45px;
+    padding: 6px;
+    font-size: 0.75rem;
+  }
+
+  .event-day {
+    font-size: 1rem;
+  }
+
+  .event-details h6 {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+
+  .event-details p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  /* Categories - Better Wrapping */
+  .categories {
+    gap: 6px;
+  }
+
+  .category-tag {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Article Content - Better Mobile Typography */
+  .article-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .article-meta {
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+
+  .article-content {
+    font-size: 0.95rem;
+  }
+
+  .article-content h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  .article-content h4 {
+    font-size: 1.05rem;
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+
+  .article-content p {
+    text-align: left;
+  }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 65px;
+  }
+
+  .page-header h1 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .page-header p {
+    font-size: 0.9rem;
+  }
+
+  .news-card {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .news-date {
+    padding: 10px;
+  }
+
+  .news-date .day {
+    font-size: 1.2rem;
+  }
+
+  .news-title {
+    font-size: 0.95rem;
+  }
+
+  .news-excerpt {
+    font-size: 0.85rem;
+  }
+
+  .read-more {
+    font-size: 0.85rem;
+  }
+
+  .sidebar-widget {
+    margin-top: 25px;
+    padding: 15px;
+  }
+
+  .widget-title {
+    font-size: 1rem;
+  }
+
+  .event-item {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .category-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .article-title {
+    font-size: 1.2rem;
+  }
+
+  .article-meta {
+    font-size: 0.8rem;
+  }
+
+  .article-content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
